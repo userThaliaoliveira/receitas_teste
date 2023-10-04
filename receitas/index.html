@@ -11,9 +11,8 @@
   <script>
     // Adicione um evento de clique ao botão "Sim"
     document.getElementById("simButton").addEventListener("click", function() {
-      // Redirecione para a página da API ou realize a ação desejada quando a resposta for "Sim"
-      // Por exemplo, você pode redirecionar para a rota da API mencionada anteriormente
-      window.location.href = "/pergunta";
+      // Realize a chamada à API quando o botão "Sim" for clicado
+      fetch("http://localhost:5501/perguntas").then(resp => console.log(resp))
     });
 
     // Adicione um evento de clique ao botão "Não"
