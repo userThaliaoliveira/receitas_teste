@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pergunta</title>
+</head>
+<body>
+  <h1>Você gostaria de uma receita?</h1>
+  <button id="simButton">Sim</button>
+  <button id="naoButton">Não</button>
+
+  <script>
+    // Adicione um evento de clique ao botão "Sim"
+    document.getElementById("simButton").addEventListener("click", function() {
+      // Redirecione para a página da API ou realize a ação desejada quando a resposta for "Sim"
+      // Por exemplo, você pode redirecionar para a rota da API mencionada anteriormente
+      window.location.href = "/pergunta";
+    });
+
+    // Adicione um evento de clique ao botão "Não"
+    document.getElementById("naoButton").addEventListener("click", function() {
+      // Realize a ação desejada quando a resposta for "Não"
+      // Por exemplo, você pode exibir uma imagem ou uma mensagem diferente
+      alert("Aqui está uma imagem.");
+    });
+  </script>
+</body>
+</html>
